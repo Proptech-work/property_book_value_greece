@@ -48,7 +48,7 @@ apartment:
 
 
   construction_material:
-    concrete: 1.0
     brick_or_stone: 0.9
     other_inferior: 0.7  
+    concrete: 1.0
 
