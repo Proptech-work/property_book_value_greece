@@ -1,0 +1,54 @@
+apartment:
+  face_factor:
+    single_facing: 1.0  #On a single road or in a common area in general
+    multi_facing: 1.05  #On two or more streets or on a street and a square or on a street and a public space or exclusively on a square or has more than one facade in a single public space
+    facing_short: 0.8   #On a street or streets or in a common area where the distance of building lines is less than or equal to 6.00 meters
+    no_face: 0.8  #Exclusively in the uncovered area of the plot or located on a blind plot or on a plot that communicates with the road exclusively with a real right of way
+
+
+  floor_factor:
+    basement: 0.6
+    ground_floor: 0.9
+    first_floor: 1.0
+    second_floor: 1.05
+    third_floor: 1.1
+    fourth_floor: 1.15
+    fifth_floor: 1.2
+    sixth_floor_and_above: 1.25
+
+
+  area_factor:
+    leq_25: 1.05  
+    g_25_leq_100: 1.0
+    g_100_leq_200: 1.05
+    g_200_leq_300: 1.1
+    g_300_leq_500: 1.2
+    g_500: 1.3
+
+
+  age_factor:
+    leq_1: 1.0
+    leq_5: 0.9
+    leq_10: 0.8
+    leq_15: 0.75
+    leq_20: 0.7
+    leq_25: 0.65
+    g_25: 0.6
+
+
+
+  special_factors:
+    conservation_status: 0.8
+    expropriable_status: 0.75
+    outer_wall_width_above_50cm: 0.9
+    tin_or_asbestos_roof: 0.8
+    no_central_heating:  0.95
+    no_elevator_above_second_floor: 0.9
+    multiple_ownership: 0.9
+
+
+  construction_material:
+    concrete: 1.0
+    brick_or_stone: 0.9
+    other_inferior: 0.7  
+
